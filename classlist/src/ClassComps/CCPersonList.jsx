@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import CCInput from "./CCInput";
 import { BsTrash, BsPencil, BsCheck } from "react-icons/bs";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class CCPersonList extends Component {
 
@@ -65,11 +66,11 @@ export default class CCPersonList extends Component {
         const { persons, editingPersonId, editedName } = this.state;
 
         return (
-            <div>
+            <div className="container mt-4">
                 <CCInput onAddPerson={this.addPerson} />
-                <div>
-                    <h2>Persons List:</h2>
-                    <ul>
+                <div className="card mt-4">
+                    <h2 className="card-header">Persons List:</h2>
+                    <ul className="list-group list-group-flush">
                         {persons.map((person) => (
                             <li
                                 key={person.id}

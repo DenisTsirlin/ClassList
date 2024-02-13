@@ -25,8 +25,8 @@ export default class CCInput extends Component{
 
         return (
             <div>
-                Name: <input type="text" value={name} onChange={this.chgName} /><br />
-                Grade: <input type="number" value={grade} onChange={this.chgGrade} /><br />
+                Name: <input type="text" value={name} onChange={this.chgName} /><br /><br />
+                Grade: <input type="number" value={grade} onChange={this.chgGrade} /><br /> <br />
                 <button onClick={() => onAddPerson(name, grade)}>Add Person</button>
             </div>
         );
