@@ -6,6 +6,7 @@ export default class CCMain extends Component {
         return (
             <div>
                 <CCPersonList />
+                
             </div>
         )
 
